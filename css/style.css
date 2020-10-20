@@ -268,6 +268,12 @@ a {
   .main-screen__title {
     text-align: center; } }
 
+@media screen and (max-width: 400px) {
+  .main-screen__title {
+    font-size: 40px; }
+  .main-screen__list-item {
+    font-size: 14px; } }
+
 @media screen and (max-width: 767px) {
   .main-screen__title {
     text-align: center; }
