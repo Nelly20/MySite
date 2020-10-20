@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="js/wow.min.js"></script>
     <script>
       new WOW().init();
@@ -20,6 +20,65 @@
   <body class="page__body">
     <header class="page-header wow animate__animated animate__fadeInDownBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
       <div class="container col-12 header">
+      <nav class="navbar-expand-lg">
+        <a class="page-header__mobile" href="#">+38 (066) 994-4580</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Обо мне</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Сертификаты</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Навыки</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Портфолио</a>
+            </li>
+          </ul>
+          <p class="page-header__country">Ukraine</p>
+        </div>
+        </nav>
+      </div>
+
+
+
+      <!-- <div class="container col-12 header">
+        <a class="page-header__mobile" href="#">+38 (066) 994-4580</a>
+        <div class="navbar-collapse" id="navbarToggleExternalContent">
+            <nav class="main-nav navbar-expand-lg">
+              <ul class="navbar-nav main-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__link">Обо мне</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link">Сертификаты</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link">Навыки</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link">Портфолио</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="page-header__country">Ukraine</p>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div> -->
+
+
+      <!-- <div class="container col-12 header">
         <a class="page-header__mobile" href="#">+38 (066) 994-4580</a>
         <nav class="main-nav">
           <ul class="main-nav__list site-list">
@@ -38,7 +97,14 @@
           </ul>
         </nav>
         <p class="page-header__country">Ukraine</p>
-      </div>
+      </div> -->
+
+
+
+
+
+
+
     </header>
 
     <main class="page-main content">
@@ -55,10 +121,14 @@
       <section class="about-me">
         <div class="container">
           <div class="row">
-            <div class="col-5 wow animate__animated animate__fadeInLeftBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
-              <img class="about-me__img" src="img/my-photo.jpg" alt="Мое фото"/>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 wow animate__animated animate__fadeInLeftBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
+              <picture>
+                <source media="(max-width: 991px)" srcset="img/my-photo-tablet.jpg">
+                <source media="(max-width: 1199px)" srcset="img/my-photo-desktop.jpg">
+                <img class="about-me__img" src="img/my-photo.jpg" alt="Мое фото">
+              </picture>
             </div>
-            <div class="col-7 wow animate__animated animate__fadeInRightBig">
+            <div class="col-xl-7 col-lg-7 col-md-12 wow animate__animated animate__fadeInRightBig">
               <h2 class="about-me__title">Nelly <span>Junior Верстальщик, UX/UI Дизайнер</span></h2>
               <p class="about-me__subtitle">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне </p>
               <ul class="about-me__list">
@@ -85,14 +155,26 @@
             </div>
             <div class="col-12">
               <ul class="certificate__list row">
-                <li class="certificate__list-item col-4">
-                  <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат"/>
+                <li class="certificate__list-item col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                  <picture>
+                    <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
+                    <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
+                    <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
+                  </picture>
                 </li>
-                <li class="certificate__list-item col-4">
-                  <img class="certificate__list-img" src="img/certificate-2.jpg" alt="Сертификат"/>
+                <li class="certificate__list-item col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/certificate-2-extrasmall.jpg">
+                    <source media="(max-width: 767px)" srcset="img/certificate-2-mobile.jpg">
+                    <img class="certificate__list-img" src="img/certificate-2.jpg" alt="Сертификат">
+                  </picture>
                 </li>
-                <li class="certificate__list-item col-4">
-                  <img class="certificate__list-img" src="img/certificate-2.jpg" alt="Сертификат"/>
+                <li class="certificate__list-item col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/certificate-2-extrasmall.jpg">
+                    <source media="(max-width: 767px)" srcset="img/certificate-2-mobile.jpg">
+                    <img class="certificate__list-img" src="img/certificate-2.jpg" alt="Сертификат">
+                  </picture>
                 </li>
               </ul>
             </div>
@@ -105,27 +187,27 @@
           <div class="col-12 skills">
             <h2 class="skills__title">Мои навыки</h2>
             <ul class="skills__list row">
-              <li class="skills__list-item col-4">
+              <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-html">HTML</p>
                 <div class="level"><div style="width: 100%;">100%</div></div>
               </li>
-              <li class="skills__list-item col-4">
+              <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-css">CSS</p>
                 <div class="level"><div style="width: 100%;">100%</div></div>
               </li>
-              <li class="skills__list-item col-4">
+              <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-photoshop">Adobe Photoshop</p>
                 <div class="level"><div style="width: 90%;">90%</div></div>
               </li>
-              <li class="skills__list-item col-4">
+              <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-github">GitHub</p>
                 <div class="level"><div style="width: 80%;">80%</div></div>
               </li>
-              <li class="skills__list-item col-4">
+              <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-gulp">Gulp</p>
                 <div class="level"><div style="width: 70%;">70%</div></div>
               </li>
-              <li class="skills__list-item col-4">
+              <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-sass">Sass</p>
                 <div class="level"><div style="width: 90%;">90%</div></div>
               </li>
@@ -144,10 +226,14 @@
           <ul class="portfolio__list">
             <li class="portfolio__list-item">
               <div class="row portfolio-item wow animate__animated animate__fadeInLeftBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                <div class="col-6">
-                  <img class="portfolio__list-item-img" src="img/portfolio-1.jpg" alt="Сайт Cat Energy"/>
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/portfolio-1-mobile.jpg">
+                    <source media="(max-width: 991px)" srcset="img/portfolio-1-tablet.jpg">
+                    <img class="portfolio__list-item-img" src="img/portfolio-1.jpg" alt="Сайт Cat Energy">
+                  </picture>
                 </div>
-                <div class="col-6">
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
                   <h3 class="portfolio__list-item-header">Верстка сайта <span>Cat Energy</span></h3>
                   <p class="portfolio__list-item-description">Адаптивная верстка  интернет магазина функционального питания для котов.Сверстано три страницы под три расширения на флексах и гридах.</p>
                   <a class="portfolio__list-item-button" href="https://nelly20.github.io/cat-energy/">Смотреть сайт</a>
@@ -156,22 +242,30 @@
             </li>
             <li class="portfolio__list-item">
               <div class="row portfolio-item wow animate__animated animate__fadeInRightBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                <div class="col-6 portfolio-info">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/portfolio-2-mobile.jpg">
+                    <source media="(max-width: 991px)" srcset="img/portfolio-2-tablet.jpg">
+                    <img class="portfolio__list-item-img" src="img/portfolio-2.jpg" alt="Сайт Техномарт">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
                   <h3 class="portfolio__list-item-header">Верстка сайта <span>Техномарт</span></h3>
                   <p class="portfolio__list-item-description">Фиксированная верстка интернет-магазина строительных материалов и инструментов для ремонта.Сверстано две страницы на флексах и гридах.</p>
                   <a class="portfolio__list-item-button" href="https://nelly20.github.io/919923-technomart-28/">Смотреть сайт</a>
-                </div>
-                <div class="col-6">
-                  <img class="portfolio__list-item-img" src="img/portfolio-2.jpg" alt="Сайт Техномарт"/>
                 </div>
               </div>
             </li>
             <li class="portfolio__list-item">
               <div class="row portfolio-item wow animate__animated animate__fadeInLeftBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                <div class="col-6">
-                  <img class="portfolio__list-item-img" src="img/portfolio-3.jpg" alt="Landing page для Кондитера"/>
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/portfolio-3-mobile.jpg">
+                    <source media="(max-width: 991px)" srcset="img/portfolio-3-tablet.jpg">
+                    <img class="portfolio__list-item-img" src="img/portfolio-3.jpg" alt="Landing page для Кондитера">
+                  </picture>
                 </div>
-                <div class="col-6">
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
                   <h3 class="portfolio__list-item-header">Дизайн landing page для <span>Кондитера</span></h3>
                   <p class="portfolio__list-item-description">Дизайн landing page для кондитера Наталии. Сделан в графическом редакторе Figma.</p>
                   <a class="portfolio__list-item-button" href="https://www.behance.net/gallery/105777935/Design-landing-page">Смотреть сайт</a>
@@ -180,13 +274,17 @@
             </li>
             <li class="portfolio__list-item">
               <div class="row portfolio-item wow animate__animated animate__fadeInRightBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                <div class="col-6">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source media="(max-width: 576px)" srcset="img/portfolio-4-mobile.jpg">
+                    <source media="(max-width: 991px)" srcset="img/portfolio-4-tablet.jpg">
+                    <img class="portfolio__list-item-img" src="img/portfolio-4.jpg" alt="Landing page для Фотографа">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
                   <h3 class="portfolio__list-item-header">Дизайн landing page для <span>Фотографа</span></h3>
                   <p class="portfolio__list-item-description">Дизайн landing page для команды фотографов. Сделан в графическом редакторе Figma.</p>
                   <a class="portfolio__list-item-button" href="https://www.behance.net/portfolio/editor?project_id=105861889">Смотреть сайт</a>
-                </div>
-                <div class="col-6">
-                  <img class="portfolio__list-item-img" src="img/portfolio-4.jpg" alt="Landing page для Фотографа"/>
                 </div>
               </div>
             </li>
@@ -195,7 +293,7 @@
       </section>
     </main>
 
-    <footer class="page-footer wow animate__animated animate__fadeInUpBig" data-wow-duration="0.5s" data-wow-delay="0.5s">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col-12 footer">
