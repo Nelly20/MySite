@@ -16,36 +16,34 @@
       new WOW().init();
     </script>
   </head>
-
   <body class="page__body">
     <header class="page-header wow animate__animated animate__fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
       <div class="container col-12 header">
-      <nav class="navbar-expand-lg">
-        <a class="page-header__mobile" href="#">+38 (066) 994-4580</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar-expand-lg">
+          <a class="page-header__mobile" href="#">+38 (066) 994-4580</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#">Обо мне</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Сертификаты</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Навыки</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">Портфолио</a>
-            </li>
-          </ul>
-          <p class="page-header__country">Ukraine</p>
-        </div>
+          </button>
+          <div class="collapse main-nav navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link" href="#about-me">Обо мне</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#certificate">Сертификаты</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#skills">Навыки</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#portfolio">Портфолио</a>
+              </li>
+            </ul>
+            <p class="page-header__country">Ukraine</p>
+          </div>
         </nav>
       </div>
     </header>
-
     <main class="page-main content">
       <section class="container main-screen col-6 wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
         <h1 class="main-screen__title">Junior <span>Верстальщик</span></h1>
@@ -54,10 +52,9 @@
           <li class="main-screen__list-item">Дизайн <span>сайта</span></li>
           <li class="main-screen__list-item">Верстка <span>сайта</span></li>
         </ul>
-        <button class="main-screen__button">Смотреть портфолио</button>
+        <a href="#portfolio" class="main-screen__button">Смотреть портфолио</a>
       </section>
-
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <div class="container">
           <div class="row">
             <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
@@ -71,13 +68,13 @@
               <h2 class="about-me__title">Nelly <span>Junior Верстальщик, UX/UI Дизайнер</span></h2>
               <p class="about-me__subtitle">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне </p>
               <ul class="about-me__list">
-                <li class="about-me__list-item icon--quarantee">
+                <li class="about-me__list-item about-me__list-item--quarantee">
                   Опыт работы<br>более 2-х лет
                 </li>
-                <li class="about-me__list-item icon--certificate">
+                <li class="about-me__list-item about-me__list-item--certificate">
                   Наличие 4-х<br>сертификатов
                 </li>
-                <li class="about-me__list-item icon--education">
+                <li class="about-me__list-item about-me__list-item--education">
                   окончила курсы<br>html academy
                 </li>
               </ul>
@@ -85,8 +82,7 @@
           </div>
         </div>
       </section>
-
-      <section class="certificate wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+      <section class="certificate wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" id="certificate">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -120,42 +116,52 @@
           </div>
         </div>
       </section>
-
-      <section class="wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
+      <section class="wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s" id="skills">
         <div class="container">
           <div class="col-12 skills">
             <h2 class="skills__title">Мои навыки</h2>
             <ul class="skills__list row">
               <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-html">HTML</p>
-                <div class="level"><div style="width: 100%;">100%</div></div>
+                <div class="level">
+                  <div style="width: 100%;">100%</div>
+                </div>
               </li>
               <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-css">CSS</p>
-                <div class="level"><div style="width: 100%;">100%</div></div>
+                <div class="level">
+                  <div style="width: 100%;">100%</div>
+                </div>
               </li>
               <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-photoshop">Adobe Photoshop</p>
-                <div class="level"><div style="width: 90%;">90%</div></div>
+                <div class="level">
+                  <div style="width: 90%;">90%</div>
+                </div>
               </li>
               <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-github">GitHub</p>
-                <div class="level"><div style="width: 80%;">80%</div></div>
+                <div class="level">
+                  <div style="width: 80%;">80%</div>
+                </div>
               </li>
               <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-gulp">Gulp</p>
-                <div class="level"><div style="width: 70%;">70%</div></div>
+                <div class="level">
+                  <div style="width: 70%;">70%</div>
+                </div>
               </li>
               <li class="skills__list-item col-xl-4 col-lg-4 col-md-6">
                 <p class="skill-sass">Sass</p>
-                <div class="level"><div style="width: 90%;">90%</div></div>
+                <div class="level">
+                  <div style="width: 90%;">90%</div>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
-
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -231,7 +237,6 @@
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="container">
         <div class="row">
@@ -243,6 +248,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
