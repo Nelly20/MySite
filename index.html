@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name='freelancehunt' content='d8e53a77de694f7'/>
+    <meta name="freelancehunt" content="d8e53a77de694f7">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Junior Верстальщик</title>
     <link rel="stylesheet" href="css/styles.min.css">
@@ -21,14 +21,16 @@
     <header class="page-header wow animate__animated animate__fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
       <div class="container col-12 header">
         <nav class="navbar-expand-lg">
-          <a class="page-header__mobile" href="#">+38 (066) 994-4580</a>
+          <!-- <a class="page-header__mobile" href="#">
+            <img src="img/logo.png" alt="logo"/>
+          </a> -->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse main-nav navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="#about-me">Обо мне</a>
+                <a class="site-list__link site-list__link--active" href="#about-me">Обо мне</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#certificate">Сертификаты</a>
@@ -83,41 +85,82 @@
           </div>
         </div>
       </section>
-      <section class="certificate wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" id="certificate">
+      <section class="certificate wow animate__animated animate__zoomIn" data-wow-duration="0.5s" data-wow-delay="0.5s" id="certificate">
         <div class="container">
           <div class="row">
             <div class="col-12">
               <h2 class="certificate__title">Мои сертификаты</h2>
             </div>
-            <div class="col-12">
-              <ul class="certificate__list row">
-                <li class="certificate__list-item col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                  <picture>
-                    <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
-                    <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
-                    <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
-                  </picture>
+            <div class="col-12 carousel slide" id="carouselExampleControls" data-ride="carousel">
+              <ul class="certificate__list row carousel-inner">
+                <li class="certificate__list-item carousel-item active">
+                  <div class="certificate__list-item-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.webp">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/certificate-1-mobile.webp">
+                      <source type="image/webp" srcset="img/certificate-1.webp">
+                      <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
+                      <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
+                      <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
+                    </picture>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.webp">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/certificate-1-mobile.webp">
+                      <source type="image/webp" srcset="img/certificate-1.webp">
+                      <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
+                      <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
+                      <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
+                    </picture>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.webp">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/certificate-1-mobile.webp">
+                      <source type="image/webp" srcset="img/certificate-1.webp">
+                      <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
+                      <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
+                      <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
+                    </picture>
+                  </div>
                 </li>
-                <li class="certificate__list-item col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                  <picture>
-                    <source media="(max-width: 576px)" srcset="img/certificate-2-extrasmall.jpg">
-                    <source media="(max-width: 767px)" srcset="img/certificate-2-mobile.jpg">
-                    <img class="certificate__list-img" src="img/certificate-2.jpg" alt="Сертификат">
-                  </picture>
-                </li>
-                <li class="certificate__list-item col-xl-4 col-lg-4 col-md-6 col-sm-6">
-                  <picture>
-                    <source media="(max-width: 576px)" srcset="img/certificate-2-extrasmall.jpg">
-                    <source media="(max-width: 767px)" srcset="img/certificate-2-mobile.jpg">
-                    <img class="certificate__list-img" src="img/certificate-2.jpg" alt="Сертификат">
-                  </picture>
+                <li class="certificate__list-item carousel-item">
+                  <div class="certificate__list-item-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.webp">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/certificate-1-mobile.webp">
+                      <source type="image/webp" srcset="img/certificate-1.webp">
+                      <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
+                      <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
+                      <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
+                    </picture>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.webp">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/certificate-1-mobile.webp">
+                      <source type="image/webp" srcset="img/certificate-1.webp">
+                      <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
+                      <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
+                      <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
+                    </picture>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.webp">
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/certificate-1-mobile.webp">
+                      <source type="image/webp" srcset="img/certificate-1.webp">
+                      <source media="(max-width: 567px)" srcset="img/certificate-1-extrasmall.jpg">
+                      <source media="(max-width: 767px)" srcset="img/certificate-1-mobile.jpg">
+                      <img class="certificate__list-img" src="img/certificate-1.jpg" alt="Сертификат">
+                    </picture>
+                  </div>
                 </li>
               </ul>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s" id="skills">
+      <section class="wow animate__animated animate__slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s" id="skills">
         <div class="container">
           <div class="col-12 skills">
             <h2 class="skills__title">Мои навыки</h2>
@@ -171,66 +214,152 @@
           </div>
           <ul class="portfolio__list">
             <li class="portfolio__list-item">
-              <div class="row portfolio-item wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
+              <div class="row portfolio-item wow animate__animated animate__slideInRight">
                 <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
                   <picture>
-                    <source media="(max-width: 576px)" srcset="img/portfolio-1-mobile.jpg">
-                    <source media="(max-width: 991px)" srcset="img/portfolio-1-tablet.jpg">
-                    <img class="portfolio__list-item-img" src="img/portfolio-1.jpg" alt="Сайт Cat Energy">
+                    <source type="image/webp" srcset="img/delivery.webp">
+                    <img class="portfolio__list-item-img" src="img/delivery.jpg" alt="Delivery">
                   </picture>
                 </div>
                 <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
-                  <h3 class="portfolio__list-item-header">Верстка сайта <span>Cat Energy</span></h3>
-                  <p class="portfolio__list-item-description">Адаптивная верстка  интернет магазина функционального питания для котов.Сверстано три страницы под три расширения на флексах и гридах.</p>
+                  <h3 class="portfolio__list-item-header">Дизайн landing page для <span>доставки еды</span></h3>
+                  <p class="portfolio__list-item-description">Дизайн landing page для доставки пиццы и суши. Сделан в графическом редакторе Figma.</p>
+                  <a class="portfolio__list-item-button" href="https://www.behance.net/gallery/106855007/Design-landing-page-for-food-delivery">Смотреть сайт</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <div class="row portfolio-item wow animate__animated animate__slideInLeft">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source type="image/webp" srcset="img/make-up.webp">
+                    <img class="portfolio__list-item-img" src="img/make-up.jpg" alt="Make-up">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <h3 class="portfolio__list-item-header">Дизайн landing page для <span>мастера макияжа</span></h3>
+                  <p class="portfolio__list-item-description">Дизайн landing page для мастера перманентного макияжа. Сделан в графическом редакторе Figma.</p>
+                  <a class="portfolio__list-item-button" href="https://www.behance.net/gallery/106969213/Design-landing-page-for-make-up-artist">Смотреть сайт</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <div class="row portfolio-item wow animate__animated animate__slideInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source type="image/webp" srcset="img/cat-energy.webp">
+                    <img class="portfolio__list-item-img" src="img/cat-energy.jpg" alt="Cat Energy">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <h3 class="portfolio__list-item-header">Адаптивная верстка сайта <span>Cat Energy</span></h3>
+                  <p class="portfolio__list-item-description">Верстка сайта HTML, CSS. При верстке был использован препроцессор Sass. Сайт сверстан на флексах и гридах.</p>
                   <a class="portfolio__list-item-button" href="https://nelly20.github.io/cat-energy/">Смотреть сайт</a>
                 </div>
               </div>
             </li>
             <li class="portfolio__list-item">
-              <div class="row portfolio-item wow animate__animated animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+              <div class="row portfolio-item wow animate__animated animate__slideInLeft">
                 <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
                   <picture>
-                    <source media="(max-width: 576px)" srcset="img/portfolio-2-mobile.jpg">
-                    <source media="(max-width: 991px)" srcset="img/portfolio-2-tablet.jpg">
-                    <img class="portfolio__list-item-img" src="img/portfolio-2.jpg" alt="Сайт Техномарт">
+                    <source type="image/webp" srcset="img/cake.webp">
+                    <img class="portfolio__list-item-img" src="img/cake.jpg" alt="Cake">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <h3 class="portfolio__list-item-header">Дизайн landing page для <span>кондитера</span></h3>
+                  <p class="portfolio__list-item-description">Дизайн landing page для кондитера. Сделан в графическом редакторе Figma.</p>
+                  <a class="portfolio__list-item-button" href="https://nelly20.github.io/cat-energy/">Смотреть сайт</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <div class="row portfolio-item wow animate__animated animate__slideInRight">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source type="image/webp" srcset="img/house.webp">
+                    <img class="portfolio__list-item-img" src="img/house.jpg" alt="House">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <h3 class="portfolio__list-item-header">Дизайн landing page для <span>жилого комплекса</span></h3>
+                  <p class="portfolio__list-item-description">Дизайн landing page для жилого комплекса. Сделан в графическом редакторе Figma.</p>
+                  <a class="portfolio__list-item-button" href="https://www.behance.net/gallery/107032241/Design-landing-page-for-apartment-complex">Смотреть сайт</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <div class="row portfolio-item wow animate__animated animate__slideInLeft">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source type="image/webp" srcset="img/technomart.webp">
+                    <img class="portfolio__list-item-img" src="img/technomart.jpg" alt="Technomart">
                   </picture>
                 </div>
                 <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
                   <h3 class="portfolio__list-item-header">Верстка сайта <span>Техномарт</span></h3>
-                  <p class="portfolio__list-item-description">Фиксированная верстка интернет-магазина строительных материалов и инструментов для ремонта.Сверстано две страницы на флексах и гридах.</p>
+                  <p class="portfolio__list-item-description">Верстка сайта HTML, CSS, Java Script. Сайт сверстан на флексах и гридах.</p>
                   <a class="portfolio__list-item-button" href="https://nelly20.github.io/919923-technomart-28/">Смотреть сайт</a>
                 </div>
               </div>
             </li>
             <li class="portfolio__list-item">
-              <div class="row portfolio-item wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
+              <div class="row portfolio-item wow animate__animated animate__slideInRight">
                 <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
                   <picture>
-                    <source media="(max-width: 576px)" srcset="img/portfolio-3-mobile.jpg">
-                    <source media="(max-width: 991px)" srcset="img/portfolio-3-tablet.jpg">
-                    <img class="portfolio__list-item-img" src="img/portfolio-3.jpg" alt="Landing page для Кондитера">
+                    <source type="image/webp" srcset="img/phsycologist-portfolio.webp">
+                    <img class="portfolio__list-item-img" src="img/phsycologist-portfolio.jpg" alt="Phsycologist">
                   </picture>
                 </div>
                 <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
-                  <h3 class="portfolio__list-item-header">Дизайн landing page для <span>Кондитера</span></h3>
-                  <p class="portfolio__list-item-description">Дизайн landing page для кондитера Наталии. Сделан в графическом редакторе Figma.</p>
-                  <a class="portfolio__list-item-button" href="https://www.behance.net/gallery/105777935/Design-landing-page">Смотреть сайт</a>
+                  <h3 class="portfolio__list-item-header">Дизайн landing page сайта <span>психолога</span></h3>
+                  <p class="portfolio__list-item-description">Дизайн landing page для психолога. Сделан в графическом редакторе Figma.</p>
+                  <a class="portfolio__list-item-button" href="https://www.behance.net/gallery/107393137/Design-landing-page-for-psychologist?">Смотреть сайт</a>
                 </div>
               </div>
             </li>
             <li class="portfolio__list-item">
-              <div class="row portfolio-item wow animate__animated animate__fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+              <div class="row portfolio-item wow animate__animated animate__slideInLeft">
                 <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
                   <picture>
-                    <source media="(max-width: 576px)" srcset="img/portfolio-4-mobile.jpg">
-                    <source media="(max-width: 991px)" srcset="img/portfolio-4-tablet.jpg">
-                    <img class="portfolio__list-item-img" src="img/portfolio-4.jpg" alt="Landing page для Фотографа">
+                    <source type="image/webp" srcset="img/LaslesVPN.webp">
+                    <img class="portfolio__list-item-img" src="img/LaslesVPN.jpg" alt="LaslesVPN">
                   </picture>
                 </div>
                 <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
-                  <h3 class="portfolio__list-item-header">Дизайн landing page для <span>Фотографа</span></h3>
-                  <p class="portfolio__list-item-description">Дизайн landing page для команды фотографов. Сделан в графическом редакторе Figma.</p>
-                  <a class="portfolio__list-item-button" href="https://www.behance.net/portfolio/editor?project_id=105861889">Смотреть сайт</a>
+                  <h3 class="portfolio__list-item-header">Адаптивная верстка сайта <span>LaslesVPN</span></h3>
+                  <p class="portfolio__list-item-description">Верстка сайта HTML, CSS. При верстке был использован препроцессор Sass. Сайт сверстан на bootstrap 5.</p>
+                  <a class="portfolio__list-item-button" href="https://nelly20.github.io/LaslesVPN/">Смотреть сайт</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <div class="row portfolio-item wow animate__animated animate__slideInRight">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source type="image/webp" srcset="img/english-teacher.webp">
+                    <img class="portfolio__list-item-img" src="img/english-teacher.jpg" alt="English teacher">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <h3 class="portfolio__list-item-header">Дизайн landing page сайта <span>репетитора английского</span></h3>
+                  <p class="portfolio__list-item-description">Дизайн landing page для репетитора английского. Сделан в графическом редакторе Figma.</p>
+                  <a class="portfolio__list-item-button" href="https://www.behance.net/gallery/106795511/Design-landing-page-for-English-teacher">Смотреть сайт</a>
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__list-item">
+              <div class="row portfolio-item wow animate__animated animate__slideInLeft">
+                <div class="portfolio-img-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <picture>
+                    <source type="image/webp" srcset="img/sms-code.webp">
+                    <img class="portfolio__list-item-img" src="img/sms-code.jpg" alt="Sms Code">
+                  </picture>
+                </div>
+                <div class="portfolio-info-wrapper col-xl-6 col-lg-6 col-md-12">
+                  <h3 class="portfolio__list-item-header">Адаптивная верстка сайта <span>SMS-CODE</span></h3>
+                  <p class="portfolio__list-item-description">Верстка сайта HTML, CSS. При верстке был использован препроцессор Sass. Сайт сверстан на bootstrap 5.</p>
+                  <a class="portfolio__list-item-button" href="https://nelly20.github.io/sms-code/">Смотреть сайт</a>
                 </div>
               </div>
             </li>
@@ -242,7 +371,6 @@
       <div class="container">
         <div class="row">
           <div class="col-12 footer">
-            <a class="page-footer__mobile" href="">+38 (066) 994-4580</a>
             <p class="page-footer__copyright">Все права защищены 2020</p>
             <p class="page-footer__country">Ukraine</p>
           </div>

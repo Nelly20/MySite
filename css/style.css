@@ -36,7 +36,7 @@ a {
   flex: 1 0 auto; }
 
 .page__body {
-  background-image: url("../img/main-background2.jpg");
+  background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 600px; }
@@ -47,16 +47,14 @@ a {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); }
 
 .page-header__mobile {
-  min-width: 20%;
-  margin-left: 30px;
-  padding-left: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #451e85;
+  width: 100px;
   text-decoration: none;
   background-image: url("../img/icon-phone.png");
   background-repeat: no-repeat;
-  background-position: left center;
-  font-weight: 700;
-  font-size: 14px;
-  color: #451e85; }
+  background-position: left center; }
   .page-header__mobile:hover {
     color: #642cc0;
     background-image: url("../img/icon-phone-hover.png"); }
@@ -74,7 +72,7 @@ a {
 
 .navbar-collapse {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: auto; }
 
 .site-list__item {
@@ -84,11 +82,11 @@ a {
     background-color: #fbbb3b; }
 
 .site-list__link {
-  text-decoration: none;
   font-weight: 600;
   font-size: 12px;
   color: #000000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
   .site-list__link:hover {
     color: #fffefb; }
 
@@ -98,16 +96,16 @@ a {
   background-color: #ffaa00; }
 
 .page-header__country {
+  font-weight: 700;
+  font-size: 14px;
+  color: #451e85;
   margin-right: 30px;
   margin-bottom: 0;
   margin-left: 50px;
   padding-left: 25px;
-  background-image: url("../img/icon-world.png");
+  background-image: url("../img/icon-world.webp");
   background-repeat: no-repeat;
-  background-position: left center;
-  font-weight: 700;
-  font-size: 14px;
-  color: #451e85; }
+  background-position: left center; }
 
 .navbar-expand-lg {
   display: flex;
@@ -215,16 +213,18 @@ a {
   margin-top: 60px; }
 
 .main-screen__title {
-  text-align: center;
   font-weight: 900;
   font-size: 50px;
-  color: #fffefb; }
+  color: #fffefb;
+  text-align: center; }
 
 .main-screen__subtitle {
-  text-align: center;
   font-weight: 400;
   font-size: 30px;
-  color: #fffefb; }
+  color: #fffefb;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center; }
 
 .main-screen__list {
   margin: 0;
@@ -241,12 +241,8 @@ a {
   background-image: url("../img/icon-check.png");
   background-repeat: no-repeat;
   background-position: left center; }
-  .main-screen__list-item span {
-    font-weight: 600; }
 
 .main-screen__button {
-  margin-top: 20px;
-  padding: 14px 10px;
   width: 250px;
   height: 50px;
   text-align: center;
@@ -255,7 +251,9 @@ a {
   background-color: #ffaa00;
   border: none;
   border-radius: 30px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  padding: 14px 10px; }
   .main-screen__button:hover {
     color: #fffefb;
     background-color: #fbbb3b; }
@@ -295,10 +293,10 @@ a {
     text-transform: none; }
 
 .about-me__subtitle {
-  margin-top: 20px;
   font-weight: 400;
   font-size: 16px;
-  color: #494545; }
+  color: #494545;
+  margin-top: 20px; }
 
 .about-me__list {
   margin: 0;
@@ -308,26 +306,26 @@ a {
   margin-top: 30px; }
 
 .about-me__list-item {
-  margin-right: 76px;
-  padding-top: 80px;
   font-weight: 500;
   font-size: 12px;
   text-align: center;
   color: #451e85;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-right: 76px;
+  padding-top: 80px; }
 
 .about-me__list-item--quarantee {
-  background-image: url("../img/icon-quarantee.png");
+  background-image: url("../img/icon-quarantee.webp");
   background-repeat: no-repeat;
   background-position: top center; }
 
 .about-me__list-item--certificate {
-  background-image: url("../img/icon-certificate.png");
+  background-image: url("../img/icon-certificate.webp");
   background-repeat: no-repeat;
   background-position: top center; }
 
 .about-me__list-item--education {
-  background-image: url("../img/icon-education.png");
+  background-image: url("../img/icon-education.webp");
   background-repeat: no-repeat;
   background-position: top center; }
 
@@ -365,10 +363,10 @@ a {
   margin-top: 60px; }
 
 .certificate__title {
-  margin-bottom: 30px;
   font-weight: 500;
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 30px; }
 
 .certificate__list {
   margin: 0;
@@ -378,14 +376,19 @@ a {
 .certificate__list-item {
   margin-bottom: 20px; }
 
+.certificate__list-item-wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr; }
+
 .skills {
   margin-top: 50px; }
 
 .skills__title {
-  margin-bottom: 30px;
   font-weight: 500;
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 30px; }
 
 .skills__list {
   margin: 0;
@@ -396,12 +399,12 @@ a {
   margin-top: 30px; }
 
 .skills__list-item {
-  margin-bottom: 40px;
-  font-size: 20px;
-  text-transform: none;
   font-weight: 500;
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-transform: none; }
   .skills__list-item p {
     height: 36px;
     margin: 0 0 8px;
@@ -454,11 +457,11 @@ a {
   background-color: #f5f4f6; }
 
 .portfolio__title {
-  text-align: center;
   font-weight: 900;
   font-size: 36px;
   color: #451e85;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .portfolio__list {
   margin: 0;
@@ -486,14 +489,13 @@ a {
     color: #451e85; }
 
 .portfolio__list-item-description {
-  margin-top: 15px;
-  margin-bottom: 35px;
   font-weight: 400;
   font-size: 16px;
-  color: #494545; }
+  color: #494545;
+  margin-top: 15px;
+  margin-bottom: 35px; }
 
 .portfolio__list-item-button {
-  padding: 16px 61px;
   width: 250px;
   height: 50px;
   text-align: center;
@@ -502,7 +504,8 @@ a {
   background-color: #ffaa00;
   border: none;
   border-radius: 30px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25); }
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 16px 61px; }
   .portfolio__list-item-button:hover {
     color: #fffefb;
     background-color: #fbbb3b; }
@@ -589,7 +592,7 @@ a {
   margin-bottom: 0;
   padding-left: 25px;
   color: #fffefb;
-  background-image: url("../img/icon-world-white.png");
+  background-image: url("../img/icon-world-white.webp");
   background-repeat: no-repeat;
   background-position: left center; }
 
